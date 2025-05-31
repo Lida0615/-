@@ -1,0 +1,134 @@
+.access-section {
+    background: #7343fe;
+    padding: 70px 69px 70px 45px;
+    color: #fff;
+    border-radius: 16px;
+    background-image: url('../img/access.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+.access-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.access-left {
+    flex: 1 1 40%;
+}
+
+.access-left h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.access-form {
+    flex: 0 1 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+
+}
+
+.access-form input,
+.access-form textarea {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #76787a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.access-form textarea {
+    resize: vertical;
+    /* min-height: 80px; */
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+letter-spacing: 0.02em;
+color: #fff;
+}
+input[type="checkbox"] {
+    border-radius: 10px;
+  accent-color: #C56FFF;
+  width: 20px;
+  height: 20px;
+}
+.access-form button {
+    padding: 12px;
+    background: white;
+    color: #7e47ff;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.access-form button:hover {
+    background: #f1f1f1;
+}
+
+@media (max-width: 1024px) {
+    .access-section{
+        padding: 20px;
+    }
+    .access-container {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .access-left h2 {
+      font-size: 32px;
+        text-align: left;
+        span{
+            font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+    .access-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .access-container {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+
+    .access-form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,120 @@
+.faq {
+  padding: 60px 20px;
+  text-align: center;
+  display: none;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-title {
+ font-family: var(--font-family);
+font-weight: 500;
+font-size: 32px;
+color: #242424;
+text-align: center;
+margin-bottom: 40px;
+}
+
+.faq-item {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 19px;
+line-height: 100%;
+letter-spacing: -0.01em;
+color: #242424;
+}
+
+.faq-toggle {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.faq-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: translate(-50%, -50%) rotate(135deg);
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+  background: #7e47ff;
+  border-color: transparent;
+}
+
+.faq-item.active .faq-toggle::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-color: #fff;
+}
+
+.faq-answer {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 17px;
+line-height: 140%;
+color: #76787a;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  padding-right: 40px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {.faq-item{
+    position: relative;
+    padding: 50px 0;
+
+}
+    .faq-question {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+    }
+.faq-toggle{
+    position: absolute;
+    bottom: -15px;
+    z-index: 1;
+}
+.faq-answer{
+text-align: center;
+padding-right: 0;
+}
+
+    .access-form {
+        width: 100%;
+    }
+}

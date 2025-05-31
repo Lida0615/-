@@ -1,0 +1,123 @@
+.slider-section {
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+  /* display: none; */
+  position: relative;
+}
+
+.slider-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.slider-section mark {
+  background: yellow;
+  padding: 0 4px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: visible;
+}
+/* blur */
+
+
+.slider-section::before,
+.slider-section::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  height: calc(100% - 120px);
+  /* left: 0; */
+  width: 200px;
+  z-index: 1;
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+}
+
+/* Левый край */
+.slider-section::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(254, 254, 254, 0.6), transparent);
+}
+
+/* Правый край */
+.slider-section::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(252, 250, 250, 0.6), transparent);
+
+}
+/* blur */
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Навигационные стрелки */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Точки */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  /* margin-top: 20px; */
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dots button.active {
+  background: #000;
+  width: 14px;
+  border-radius: 6px;
+}

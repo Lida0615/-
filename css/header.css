@@ -1,0 +1,228 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+
+}
+
+.header {
+  /* display: none; */
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Основная навигация */
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__list li a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #242424;
+  transition: color 0.2s;
+}
+
+.nav__list li a:hover {
+  color: #7e47ff;
+}
+
+/* Кнопка */
+.try-btn {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #242424;
+}
+
+.try-btn:hover {
+  background: #7e47ff;
+  color: #fff;
+  border-color: #7e47ff;
+}
+
+/* Язык */
+.lang-switch {
+  /* margin-left: 16px; */
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  color: #242424;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+/* Правая часть */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Бургер */
+.burger {
+  display: none;
+background: #f6f6f6;
+border-radius: 24px;
+padding: 12px 16px;
+border: 0;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+color: #242424;
+  cursor: pointer;
+  z-index: 1100;
+  color: #333;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  background: #7e47ff;
+  color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(100%);
+  opacity: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Крестик */
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+/* Мобильное меню список */
+.mobile-menu ul {
+  list-style: none;
+}
+
+.mobile-menu li {
+  margin: 20px 0;
+}
+
+.mobile-menu a,
+.mobile-menu span {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Кнопка в мобильном меню */
+.mobile-menu .try-btn.mobile {
+  background: white;
+  color: black;
+  margin-top: auto;
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Планшет и ниже: прячем навигацию, показываем бургер */
+@media (max-width: 1024px) {
+  .nav__list {
+    display: none;
+
+    .logo {
+      display: block;
+    }
+  }
+
+  .header_wrapper {
+    justify-content: stretch;
+
+  }
+
+  .header__right {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+/* Телефон: прячем десктопную кнопку */
+@media (max-width: 600px) {
+  .header_wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    gap: 10px;
+  }
+.header__right{
+  margin: 0;
+}
+  .try-btn {
+    /* display: none; */
+    background: #7343fe;
+    color: #fff;border-radius: 24px;
+  }
+.lang-switch{
+  display: none;
+}
+  .mobile-menu .try-btn.mobile {
+    display: block;
+  }
+}
