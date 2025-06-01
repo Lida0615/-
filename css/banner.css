@@ -3,11 +3,13 @@
   background-image: url("../img/header.png");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: contain;
   display: none;
 }
 
 @media (max-width: 600px) {
   .banner {
     display: block;
+    height: 150px;
   }
 }

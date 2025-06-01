@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+
   <div class="banner">
 
   </div>
-  <header class="header">
+  <header class="header " data-aos="fade-down" data-aos-delay="200">
     <div class="container">
       <div class="header_wrapper">
 
@@ -52,9 +54,9 @@
       <ul>
         <li><a href="#">Как это работает</a></li>
         <li><a href="#">Преимущества</a></li>
-        <li><a href="#">Интерфейс</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="#interface">Интерфейс</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
         <li><a href="#">Контакты</a></li>
         <li><span>🌐 RU</span></li>
       </ul>
@@ -62,12 +64,12 @@
     </div>
   </header>
   <main>
-    <section class="promo">
+    <section class="promo container  ">
       <div class="container">
         <div class="promo_wrapper">
 
 
-          <div class="promo__left">
+          <div class="promo__left  " data-aos="fade-right" data-aos-delay="0">
             <h1>Оцифрон — финансовая<br>прозрачность и учет<br>для маркетплейс-продавцов</h1>
             <p>Учет прибыли, склада и расходов —<br>без Excel, без головной боли</p>
             <div class="promo__buttons">
@@ -77,89 +79,96 @@
           </div>
 
           <div class="promo__right">
-            <img src="./img/img2.png" alt="Интерфейс" />
+            <div class="image-slider">
+              <img src="./img/image-slider1.png" class="slide active" alt="Image 1">
+              <img src="./img/image-slider2.png" class="slide" alt="Image 2">
+              <img src="./img/image-slider3.png" class="slide" alt="Image 3">
+              <img src="./img/image-slider4.png" class="slide" alt="Image 4">
+              <img src="./img/image-slider5.png" class="slide" alt="Image 5">
+            </div>
+            <!-- <img src="./img/img2.png" alt="Интерфейс" /> -->
           </div>
         </div>
-        <div class="promo_markets">
+        <div class="promo_markets " data-aos="fade-up" data-aos-delay="0">
           <img src="./img/ozon.svg" alt="">
           <img src="./img/wb.svg" alt="">
           <img src="./img/yzndex.svg" alt="">
         </div>
       </div>
     </section>
-<div data-aos="fade-up">
-    <section class="analytics-section">
-      <div class="analytics-container">
+
+      <section class="analytics-section container">
+        <div class="analytics-container">
 
 
-        <div class="analytics-grid">
-          <h2 class="analytics-title"> Сколько вы теряете без учета?<br>
-            <span> <mark>Каждый третий селлер теряет до 20% прибыли</mark><br>
-              из-за хаоса в учете. Оцифрон — всё считает за вас.</span>
-          </h2>
+          <div class="analytics-grid">
+            <h2 class="analytics-title"> Сколько вы теряете без учета?<br>
+              <span> <mark>Каждый третий селлер теряет до 20% прибыли</mark><br>
+                из-за хаоса в учете. Оцифрон — всё считает за вас.</span>
+            </h2>
 
 
 
 
-          <div class="analytics-item">
-            <picture>
-              <source srcset="./img/analytics1.png" media="(min-width: 800px)">
-              <img src="./img/analytics1-1.png" alt="движение денег в реальном времени">
-            </picture>
-            <h3>ДДС</h3>
-            <p>движение денег в реальном времени</p>
-          </div>
+            <div class="analytics-item"  data-aos="fade-right" data-aos-delay="0">
+              <picture>
+                <source srcset="./img/analytics1.png" media="(min-width: 800px)">
+                <img src="./img/analytics1-1.png" alt="движение денег в реальном времени">
+              </picture>
+              <h3>ДДС</h3>
+              <p>движение денег в реальном времени</p>
+            </div>
 
 
-          <div class="analytics-item">
-            <picture>
-              <source srcset="./img/analytics3.png" media="(min-width: 800px)">
-              <img src="./img/analytics2-2.png" alt="вижение денег в реальном времени">
-            </picture>
-            <h3>Склад</h3>
-            <p>контроль остатков</p>
-          </div>
+            <div class="analytics-item" data-aos="fade-right" data-aos-delay="0">
+              <picture>
+                <source srcset="./img/analytics3.png" media="(min-width: 800px)">
+                <img src="./img/analytics2-2.png" alt="вижение денег в реальном времени">
+              </picture>
+              <h3>Склад</h3>
+              <p>контроль остатков</p>
+            </div>
 
-          <div class="analytics-item">
-            <picture>
-              <source srcset="./img/analytics2.png" media="(min-width: 800px)">
-              <img src="./img/analytics3-3.png" alt="Склад">
-            </picture>
-            <h3>ОПиУ</h3>
-            <p>отчёт о прибылях и убытках</p>
-          </div>
-          <div class="analytics-item">
-            <picture>
-              <source srcset="./img/analytics4.png" media="(min-width: 800px)">
-              <img src="./img/analytics4-4.png" alt="ОПиУ">
-            </picture>
-            <h3>Прибыль</h3>
-            <p>видно, сколько ты зарабатываешь</p>
+            <div class="analytics-item" data-aos="fade-left" data-aos-delay="0">
+              <picture>
+                <source srcset="./img/analytics2.png" media="(min-width: 800px)">
+                <img src="./img/analytics3-3.png" alt="Склад">
+              </picture>
+              <h3>ОПиУ</h3>
+              <p>отчёт о прибылях и убытках</p>
+            </div>
+            <div class="analytics-item" data-aos="fade-left" data-aos-delay="0">
+              <picture>
+                <source srcset="./img/analytics4.png" media="(min-width: 800px)">
+                <img src="./img/analytics4-4.png" alt="ОПиУ">
+              </picture>
+              <h3>Прибыль</h3>
+              <p>видно, сколько ты зарабатываешь</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-</div>
-    <section class="onboarding">
+      </section>
+   
+    <section class="onboarding container">
       <div class="onboarding-container">
         <h2 class="onboarding-title">Как начать пользоваться Оцифрон?</h2>
 
         <div class="onboarding-grid">
-          <div class="onboarding-step"><span>1</span>
+          <div class="onboarding-step" data-aos="fade-up" data-aos-delay="100"><span>1</span>
             <img src="./img/onboarding1.png" alt="Шаг 1">
             <h3>Подключаете маркетплейсы за 1 клик</h3>
             <p>Ozon, Wildberries, Яндекс — просто авторизуйтесь, и мы сами подтянем нужные данные. Никаких Excel,
               никакой головной боли.</p>
           </div>
 
-          <div class="onboarding-step"><span>2</span>
+          <div class="onboarding-step" data-aos="fade-up" data-aos-delay="200"><span>2</span>
             <img src="./img/onboarding2.png" alt="Шаг 2">
             <h3>Загружаются все ваши данные</h3>
             <p>Мы подтягиваем продажи, остатки, расходы, логистику, комиссии и прочее. Полная картина по всем точкам.
             </p>
           </div>
 
-          <div class="onboarding-step"> <span>3</span>
+          <div class="onboarding-step" data-aos="fade-up" data-aos-delay="300"> <span>3</span>
             <img src="./img/onboarding3.png" alt="Шаг 3">
 
             <h3>Автоматическая визуализация</h3>
@@ -167,7 +176,7 @@
               съедает деньги.</p>
           </div>
 
-          <div class="onboarding-step">
+          <div class="onboarding-step" data-aos="fade-up" data-aos-delay="400">
             <span>4</span>
             <img src="./img/onboarding4.png" alt="Шаг 4">
             <h3>Управляйте прибылью, а не догадывайтесь</h3>
@@ -179,31 +188,31 @@
     </section>
 
 
-    <section class="features-section">
+    <section class="features-section container ">
       <div class="features-container">
         <h2 class="features-title">Почему селлеры выбирают Оцифрон?</h2>
         <p class="features-subtitle"><mark>Мы лучше 99 % наших аналогов</mark></p>
 
         <div class="features-grid">
-          <div class="feature-card">
+          <div class="feature-card" data-aos="fade-right" data-aos-delay="100">
             <img src="./img/features1.png" alt="График">
             <h3>Без Excel и 1С</h3>
             <p>всё уже автоматизировано</p>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="200">
             <img src="./img/features2.png" alt="Интеграция">
             <h3>Легкая интеграция</h3>
             <p>Интеграция с Wildberries / Ozon за 1 клик</p>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card" data-aos="fade-right" data-aos-delay="300">
             <img src="./img/features3.png" alt="Интерфейс">
             <h3>Понятный интерфейс</h3>
             <p>Отчёты понятны даже бабушке</p>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card" data-aos="fade-left" data-aos-delay="400">
             <img src="./img/features4.png" alt="Облако">
             <h3>Облачное хранение</h3>
             <p>Всё в облаке — не надо ничего устанавливать</p>
@@ -215,9 +224,9 @@
       </div>
     </section>
 
-<h2 class="container"><span>Интерфейс,</span> <mark>который не пугает</mark></h2>
-    <section class="slider-section container">
-      
+    <h2 class="container heading2"><span>Интерфейс,</span> <mark>который не пугает</mark></h2>
+    <section id="interface" class="slider-section container "  data-aos="fade-up" data-aos-delay="0">
+
 
       <div class="slider-wrapper">
         <button class="arrow left" id="prevBtn">❮</button>
@@ -229,16 +238,41 @@
           <div class="slide"><img src="./img/slide.png" alt="Слайд 1"></div>
           <div class="slide"><img src="./img/slide.png" alt="Слайд 2"></div>
           <div class="slide"><img src="./img/slide.png" alt="Слайд 3"></div>
-      
+
         </div>
 
         <button class="arrow right" id="nextBtn">❯</button>
-          <div class="dots" id="dots"></div>
+        <div class="dots dots-top" id="dots"></div>
       </div>
 
-      <!-- <div class="dots" id="dots"></div> -->
+      <!-- <div class="dots dots-bottom" id="dots"></div> -->
     </section>
-    <section class="access-section container">
+    <section class="testimonials container"  data-aos="fade-up" data-aos-delay="0">
+  <h2>Скоро появятся отзывы</h2>
+  <p><mark>Более 100 селлеров уже с нами</mark> — истории скоро</p>
+
+  <div class="skeleton-container container " id="reviews"  data-aos="fade-up" data-aos-delay="0">
+    <div class="skeleton-card">
+      <div class="avatar skeleton"></div>
+      <div class="line short skeleton"></div>
+      <div class="line tiny skeleton"></div>
+      <div class="text skeleton"></div>
+      <div class="text skeleton"></div>
+      <div class="text skeleton"></div>
+    </div>
+
+    <div class="skeleton-card">
+      <div class="avatar skeleton"></div>
+      <div class="line short skeleton"></div>
+      <div class="line tiny skeleton"></div>
+      <div class="text skeleton"></div>
+      <div class="text skeleton"></div>
+      <div class="text skeleton"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="access-section container"   data-aos="fade-up" data-aos-delay="0">
       <div class="access-container">
         <div class="access-left">
           <h2>Контролируйте свой бизнес —<br><span>
@@ -260,7 +294,7 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq container" id="FAQ"  data-aos="fade-up" data-aos-delay="0">
       <div class="faq-container">
         <h2 class="faq-title">Остались вопросы?</h2>
 
@@ -299,105 +333,117 @@
   </main>
 
   <footer class="container">
-<div class="footer-bottom">
+    <div class="footer-bottom">
 
 
-    <div class="footer-container">
-      <a href="#" class="footer-link">Условия возврата</a>
-      <div class="footer-logo">
-        <img src="./img/logo.svg" alt="Логотип">
-        <a href="#" class="footer-link">Обработка персональных данных</a>
+      <div class="footer-container">
+        <a href="#" class="footer-link">Условия возврата</a>
+        <div class="footer-logo">
+          <img src="./img/logo.svg" alt="Логотип">
+          <a href="#" class="footer-link">Обработка персональных данных</a>
+        </div>
+        <a href="#" class="footer-link">Публичная оферта</a>
       </div>
-      <a href="#" class="footer-link">Публичная оферта</a>
-    </div>
 
-    <div class="footer-links-mobile">
-      <a href="#">Условия возврата</a>
-      <a href="#">Обработка персональных данных</a>
-      <a href="#">Публичная оферта</a>
-    </div></div>
+      <div class="footer-links-mobile">
+        <a href="#">Условия возврата</a>
+        <a href="#">Обработка персональных данных</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
     <section class="legal-info">
-  <div class="legal-container">
-    <div class="legal-column">
-      <p>Название организации</p>
-      <p>Юридический адрес организации</p>
-      <p>ИНН</p>
-      <p>ОГРН/ОГРНИП</p>
-      <p>Расчетный счет</p>
-      <p>Банк</p>
-      <p>ИНН банка</p>
-      <p>БИК банка</p>
-      <p>Корреспондентский счет банка</p>
-      <p>Юридический адрес банка</p>
-      <p>Электронная почта для обратной связи:</p>
-      <p>WhatsApp для обратной связи:</p>
-    </div>
+      <div class="legal-container">
+        <div class="legal-column">
+          <p>Название организации</p>
+          <p>Юридический адрес организации</p>
+          <p>ИНН</p>
+          <p>ОГРН/ОГРНИП</p>
+          <p>Расчетный счет</p>
+          <p>Банк</p>
+          <p>ИНН банка</p>
+          <p>БИК банка</p>
+          <p>Корреспондентский счет банка</p>
+          <p>Юридический адрес банка</p>
+          <p>Электронная почта для обратной связи:</p>
+          <p>WhatsApp для обратной связи:</p>
+        </div>
 
-    <div class="legal-column">
-      <p>ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ НАБИЕВ ЭЛЬВИН ШАХЛАР ОГЛЫ</p>
-      <p>175040, РОССИЯ, НОВГОРОДСКАЯ ОБЛ, СОЛЕЦКИЙ Р-Н, Д ИЛОВЁНКА, ПЕР ВЕТЕРАНОВ, Д 9</p>
-      <p>531502263400</p>
-      <p>322530000018689</p>
-      <p>40802810100000423629</p>
-      <p>АО «ТБанк»</p>
-      <p>7710140679</p>
-      <p>044525974</p>
-      <p>30101810145250000974</p>
-      <p>127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26</p>
-      <p><a href="mailto:e.nabiev1997@yandex.ru">e.nabiev1997@yandex.ru</a> </p>
-      <p><a href="tel:+79992800848"> +79992800848</a></p>
-    </div>
-  </div>
+        <div class="legal-column">
+          <p>ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ НАБИЕВ ЭЛЬВИН ШАХЛАР ОГЛЫ</p>
+          <p>175040, РОССИЯ, НОВГОРОДСКАЯ ОБЛ, СОЛЕЦКИЙ Р-Н, Д ИЛОВЁНКА, ПЕР ВЕТЕРАНОВ, Д 9</p>
+          <p>531502263400</p>
+          <p>322530000018689</p>
+          <p>40802810100000423629</p>
+          <p>АО «ТБанк»</p>
+          <p>7710140679</p>
+          <p>044525974</p>
+          <p>30101810145250000974</p>
+          <p>127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26</p>
+          <p><a href="mailto:e.nabiev1997@yandex.ru">e.nabiev1997@yandex.ru</a> </p>
+          <p><a href="tel:+79992800848"> +79992800848</a></p>
+        </div>
+      </div>
 
-<div class="legal-mobile-block">
-    <p>Название организации</p>
-    <p>ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ НАБИЕВ ЭЛЬВИН ШАХЛАР ОГЛЫ</p>
+      <div class="legal-mobile-block">
+        <p>Название организации</p>
+        <p>ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ НАБИЕВ ЭЛЬВИН ШАХЛАР ОГЛЫ</p>
 
-    <p>Юридический адрес организации</p>
-    <p>175040, РОССИЯ, НОВГОРОДСКАЯ ОБЛ, СОЛЕЦКИЙ Р-Н, Д ИЛОВЁНКА, ПЕР ВЕТЕРАНОВ, Д 9</p>
+        <p>Юридический адрес организации</p>
+        <p>175040, РОССИЯ, НОВГОРОДСКАЯ ОБЛ, СОЛЕЦКИЙ Р-Н, Д ИЛОВЁНКА, ПЕР ВЕТЕРАНОВ, Д 9</p>
 
-    <p>ИНН</p>
-    <p>531502263400</p>
+        <p>ИНН</p>
+        <p>531502263400</p>
 
-    <p>ОГРН/ОГРНИП</p>
-    <p>322530000018689</p>
+        <p>ОГРН/ОГРНИП</p>
+        <p>322530000018689</p>
 
-    <p>Расчетный счет</p>
-    <p>40802810100000423629</p>
+        <p>Расчетный счет</p>
+        <p>40802810100000423629</p>
 
-    <p>Банк</p>
-    <p>АО «ТБанк»</p>
+        <p>Банк</p>
+        <p>АО «ТБанк»</p>
 
-    <p>ИНН банка</p>
-    <p>7710140679</p>
+        <p>ИНН банка</p>
+        <p>7710140679</p>
 
-    <p>БИК банка</p>
-    <p>044525974</p>
+        <p>БИК банка</p>
+        <p>044525974</p>
 
-    <p>Корреспондентский счет банка</p>
-    <p>30101810145250000974</p>
+        <p>Корреспондентский счет банка</p>
+        <p>30101810145250000974</p>
 
-    <p>Юридический адрес банка</p>
-    <p>127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26</p>
+        <p>Юридический адрес банка</p>
+        <p>127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26</p>
 
-    <p>Электронная почта для обратной связи</p>
-    <p><a href="mailto:e.nabiev1997@yandex.ru">e.nabiev1997@yandex.ru</a></p>
+        <p>Электронная почта для обратной связи</p>
+        <p><a href="mailto:e.nabiev1997@yandex.ru">e.nabiev1997@yandex.ru</a></p>
 
-    <p>WhatsApp для обратной связи</p>
-    <p><a href="tel:+79992800848">+79992800848</a></p>
-  </div>
-  <p class="legal-copy">© 2025 оцифрон</p>
-</section>
+        <p>WhatsApp для обратной связи</p>
+        <p><a href="tel:+79992800848">+79992800848</a></p>
+      </div>
+      <p class="legal-copy">© 2025 оцифрон</p>
+    </section>
 
   </footer>
 
-
+<script>
+  document.documentElement.classList.remove("no-js");
+</script>
 
   <script src="./js/burger.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/maska-phone.js"></script>
+  <script src="./js/image-slider.js"></script>
   <script src="./js/faq.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+    mirror: false,
+    offset: 120
+  });
+</script>
 </body>
 
 </html>

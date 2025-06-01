@@ -6,6 +6,7 @@
 
 .header {
   /* display: none; */
+   /* transform: translateY(40px) */
 }
 
 .header_wrapper {
@@ -144,9 +145,11 @@ nav {
   background: none;
   border: none;
   color: white;
-  font-size: 26px;
+  font-size: 40px;
   align-self: flex-end;
   cursor: pointer;
+  position: relative;
+  top: 60px;
 }
 
 /* Мобильное меню список */
@@ -156,6 +159,11 @@ nav {
 
 .mobile-menu li {
   margin: 20px 0;
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+letter-spacing: 0.02em;
+color: #fff;
 }
 
 .mobile-menu a,

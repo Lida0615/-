@@ -5,7 +5,12 @@
   /* display: none; */
   position: relative;
 }
-
+.heading2{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 32px;
+color: #242424;
+}
 .slider-section h2 {
   font-size: 28px;
   margin-bottom: 30px;
@@ -118,4 +123,42 @@
   background: #000;
   width: 14px;
   border-radius: 6px;
+}
+
+@media(max-width: 1200px){
+  .slider-section::before,
+.slider-section::after {
+  
+  /* left: 0; */
+  width: 150px;
+
+}
+/* .dots-bottom{
+  display: flex;
+  position: static;
+} */
+.dots-top{
+  /* display: none; */
+  bottom: 0;
+  left: 0;
+  top: auto;
+}
+}
+@media(max-width: 800px){
+  .slider-section::before,
+.slider-section::after {
+  
+  /* left: 0; */
+  width: 100px;
+
+}
+}
+@media(max-width: 600px){
+  .slider-section::before,
+.slider-section::after {
+  
+  /* left: 0; */
+  width: 50px;
+
+}
 }
