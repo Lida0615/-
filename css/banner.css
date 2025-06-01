@@ -1,13 +1,13 @@
-.banner{
-    height:325px ;
-    background-image: url('../img/header.png');
-    background-position:right;
-    background-repeat: no-repeat;
-    display: none;
+.banner {
+  height: 325px;
+  background-image: url("../img/header.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  display: none;
 }
 
-@media (max-width: 600px ) {
-    .banner{
-        display: block;
-    }
+@media (max-width: 600px) {
+  .banner {
+    display: block;
+  }
 }

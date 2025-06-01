@@ -1,5 +1,5 @@
-footer{
-  display: none;
+footer {
+  /* display: none; */
 }
 .footer-bottom {
   padding: 40px 20px;
@@ -17,12 +17,11 @@ footer{
   gap: 20px;
 }
 
-.footer-logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 .footer-logo img {
   width: 50px;
@@ -30,13 +29,13 @@ footer{
 }
 
 .footer-link {
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 13px;
-line-height: 140%;
-letter-spacing: 0.01em;
-text-align: center;
-color: #09080e;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #09080e;
 }
 
 /* Мобильная версия ссылок (только для адаптации) */
@@ -45,7 +44,6 @@ color: #09080e;
   flex-direction: column;
   gap: 8px;
   margin-top: 20px;
-  
 }
 
 /* Адаптация под мобильные */
@@ -62,14 +60,14 @@ color: #09080e;
 
   .footer-links-mobile {
     display: flex;
-    a{
-        font-family: var(--font-family);
-font-weight: 400;
-font-size: 13px;
-line-height: 140%;
-letter-spacing: 0.01em;
-text-align: center;
-color: #09080e;
+    a {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: #09080e;
     }
   }
 }

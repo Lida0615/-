@@ -1,5 +1,5 @@
 .promo {
-  display: none;
+  /* display: none; */
 }
 
 .promo_wrapper {
@@ -13,7 +13,6 @@
 .promo .container {
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 .promo__left {
@@ -46,7 +45,6 @@
 }
 
 .promo_markets {
-
   display: flex;
   justify-content: space-between;
   max-width: 800px;
@@ -100,7 +98,6 @@
     gap: 25px;
 
     img {
-
       /* max-width: 80px; */
       min-width: none;
     }
@@ -109,7 +106,7 @@
   .promo__left,
   .promo__right {
     width: 100%;
-    flex: 0 0 100%
+    flex: 0 0 100%;
   }
 
   .promo__buttons {
@@ -119,19 +116,15 @@
 
 /* Адаптация под мобильный */
 @media (max-width: 600px) {
-
   .promo_markets {
     margin-top: 40px;
     gap: 25px;
 
     img {
-
       max-width: 80px;
       min-width: none;
     }
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -143,12 +136,10 @@
     text-align: left;
 
     h1 {
-
       font-size: 32px;
     }
 
     p {
-
       font-size: 15px;
     }
   }
@@ -162,7 +153,6 @@
     gap: 25px;
 
     img {
-
       max-width: 80px;
       min-width: none;
     }

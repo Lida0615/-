@@ -25,7 +25,6 @@
 }
 /* blur */
 
-
 .slider-section::before,
 .slider-section::after {
   content: "";
@@ -37,20 +36,19 @@
   width: 200px;
   z-index: 1;
   pointer-events: none;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
 }
 
 /* Левый край */
 .slider-section::before {
   left: 0;
-  background: linear-gradient(to left, rgba(254, 254, 254, 0.6), transparent);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.6), transparent);
 }
 
 /* Правый край */
 .slider-section::after {
   right: 0;
-  background: linear-gradient(to right, rgba(252, 250, 250, 0.6), transparent);
-
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
 }
 /* blur */
 
